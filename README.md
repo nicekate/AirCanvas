@@ -2,6 +2,79 @@
 
 > Draw in the air using hand gestures | 用手势在空中绘画
 
+[English](#english) | [中文](#中文)
+
+---
+
+## English
+
+AirCanvas is a real-time air drawing application that allows users to draw in the air using hand gestures without any physical contact. Powered by MediaPipe for high-precision hand detection, it supports real-time gesture recognition and various drawing features.
+
+### ✨ Features
+
+- 🎨 **Air Drawing**: Draw by moving your index finger in the air with real-time trajectory display
+- 🌈 **Gesture Color Switching**: Switch between 8 different colors using hand gestures
+- 🧹 **Gesture Canvas Clearing**: Clear the entire canvas with a multi-finger gesture
+- 📹 **Real-time Preview**: Live display of drawing effects, hand tracking, and gesture status
+- 🎯 **Precise Recognition**: High-precision hand detection and gesture recognition using MediaPipe
+- 💡 **Smart Anti-mistouch**: Built-in cooldown mechanism to prevent accidental operations
+- 🖥️ **Intuitive Interface**: Real-time finger status display, current color, and operation instructions
+
+### 🚀 Quick Start
+
+#### Requirements
+- Python 3.8+
+- Camera device
+- Good lighting conditions
+
+#### Installation
+
+**Method 1: Using uv (Recommended)**
+```bash
+# 1. Install uv (if not already installed)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# 2. Clone or download the project
+# 3. Navigate to project directory
+
+# 4. Install dependencies and run
+uv sync                        # Create virtual environment and install dependencies
+uv run python air_drawing.py   # Run the application
+```
+
+**Method 2: Using pip**
+```bash
+# 1. Clone or download the project
+# 2. Navigate to project directory
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the application
+python air_drawing.py
+```
+
+### 🎮 Controls
+
+| Gesture | Function | Description |
+|---------|----------|-------------|
+| 🖕 **Index finger only** | Drawing mode | Index fingertip trajectory will be drawn on canvas |
+| ✌️ **Index + Middle finger** | Switch color | Cycle through 8 preset colors |
+| 🖐 **4 or 5 fingers** | Clear canvas | Clear the entire canvas |
+
+#### Available Colors
+8 preset colors in cycling order:
+1. 🔴 Red 2. 🟢 Green 3. 🔵 Blue 4. 🟡 Yellow 5. 🟣 Purple 6. 🔵 Cyan 7. ⚪ White 8. ⚫ Black
+
+#### Keyboard Shortcuts
+- **'q'**: Quit application
+- **'c'**: Clear canvas
+- **'n'**: Switch color manually
+
+---
+
+## 中文
+
 这是一个基于计算机视觉和手势识别的空中绘画应用，让用户可以通过手指在空中绘画，无需任何物理接触。使用MediaPipe进行高精度手部检测，支持实时手势识别和多种绘画功能。
 
 ## ✨ 功能特点
