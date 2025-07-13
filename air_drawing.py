@@ -257,7 +257,7 @@ def main():
     # 创建空中绘画对象
     air_drawing = AirDrawing()
     
-    print("空中绘画应用已启动!")
+    print("🎨 AirCanvas 已启动!")
     print("手势说明:")
     print("- 只伸出食指: 绘画")
     print("- 伸出食指和中指: 切换颜色")
@@ -273,7 +273,7 @@ def main():
         processed_frame = air_drawing.process_frame(frame)
         
         # 显示结果
-        cv2.imshow('Air Drawing', processed_frame)
+        cv2.imshow('AirCanvas - 空中画布', processed_frame)
         
         # 检查退出条件
         key = cv2.waitKey(1) & 0xFF
