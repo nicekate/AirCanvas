@@ -1,0 +1,26 @@
+[project]
+name = "aircanvas"
+version = "1.0.0"
+description = "AirCanvas - Draw in the air using hand gestures"
+authors = [
+    {name = "User", email = "user@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "opencv-python>=4.8.0",
+    "mediapipe>=0.10.0",
+    "numpy>=1.21.0"
+]
+
+[project.scripts]
+air-drawing = "air_drawing:main"
+simple-air-drawing = "simple_air_drawing:main"
+test-camera = "test_camera:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
